@@ -717,7 +717,6 @@ newShot = function(){
 resetShot = function(){
     
     document.removeEventListener("keydown", keyShiftDown);       //Prevent accidental shoots
-    drawText('The pointer must stay within the game screen', WIDTH/2, HEIGHT/2 + 90, 15, "Arial");
     
     if(mouseX == null || mouseY == null){
         context.clearRect(0, 313, 225, extendedHEIGHT); 
